@@ -1,0 +1,730 @@
+/* כללי-חלוקת הדף */
+body {
+    display: grid;
+    /* grid-template-rows: 0.02fr 80px 600px 200px 0.5fr 0.02fr; */
+    grid-template-rows: 1fr;
+    grid-template-areas:
+        "colors"
+        "top-nav";
+    /* "describe"
+        "prefer"
+        "how-its-work"
+        "about"; */
+    direction: rtl;
+}
+#top{
+    position: fixed;
+    width: 100%;
+    grid-row: 1/2;
+    grid-area: "colors";
+    z-index: 11;
+  }
+button,p,h1,div{
+    font-family: Rubik;
+  }
+#Home-Page {
+    display: grid;
+    /* grid-template-rows: 400px 400px 200px 0.2fr 0.5fr 0.02fr; */
+    grid-template-rows: 500px;
+    grid-template-areas:
+        "picture"
+        "how_its_work"
+        "sentence1"
+        "gal"
+        "describe"
+        "sentence2";
+}
+
+/* פס צבעוני למעלה-צור קשר */
+#colors {
+    /* grid-row: 1/2;
+    grid-area: "colors"; */
+    height: 40px;
+    background: linear-gradient(to right, #82009f 0, #5d34af 50%, #00ceab 100%);
+    direction: ltr;
+    font-weight: lighter;
+    width: 100%;
+    font-size: 13px;
+    font-weight: 400;
+    color: #fff;
+    font-weight: bold;
+    display: flex;
+    text-align: center;
+}
+#AfterColors{
+    grid-row: 1/2;
+    grid-area: "colors";
+    height: 40px;
+    background: linear-gradient(to right, #f983c4 0, #f206a7 50%, #eef4c8 100%);
+    direction: ltr;
+    font-weight: lighter;
+    width: 100%;
+    font-size: 13px;
+    font-weight: 400;
+    color: #fff;
+    font-weight: bold;
+    display: flex;
+    text-align: center;
+}
+/* כיתוב על הצבעוני */
+#fontColors {
+    font-family: Rubik;
+    text-align: center;
+    justify-content: center;
+    margin-left: 4%;
+    margin-top: 10px;
+
+}
+
+button.tp-btn-small {
+    font-size: 13px;
+    font-weight: 500;
+    letter-spacing: 0;
+    text-transform: capitalize;
+    line-height: 24px;
+    padding: 0 15px;
+    background: #00ceab;
+    border-radius: 14px;
+    transition: background-color .2s ease-out, color .2s ease-out;
+}
+
+/* ניווט עליון */
+#top-nav {
+    right: 0;
+    left: 0;
+    display: flex;
+    /* grid-area: "top nav"; */
+    /* grid-row: 1/2; */
+    background-color:white;
+    z-index: 3;
+    /* box-shadow: 0 15px 20px 0 rgba(220, 220, 220, 0.365); */
+    /* border-bottom-color: rgb(233, 0, 0); */
+}
+
+li>a {
+    border-bottom: none;
+    font-family: Rubik;
+    color: rgb(245, 247, 249);
+  
+}
+
+.nav-link {
+    color: #150a33;
+    font-size: 20px;
+    font-weight: lighter;
+    margin-top: 15px;
+
+}
+
+.nav-link:hover {
+    border-bottom: 2px solid #f84cae;
+
+}
+
+ul.nuv {
+    margin-top: 10px;
+
+}
+
+ul {
+    justify-content: space-evenly;
+    margin-top: 19px;
+}
+
+#links_pages {
+    display: flex;
+}
+
+/* מיקום ועיצוב הלוגו בשורת ניווט */
+#img_logo {
+    grid-row: 2/3;
+    grid-area: "inspiration";
+    width: 120px;
+    z-index: 3;
+    margin-top: -49%;
+
+}
+
+#basket {
+    width: 5vw;
+    height: 6vh;
+    margin-right: 470%;
+    margin-top: 5%;
+}
+
+#chez_x {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    top: 0;
+    position: absolute;
+}
+
+/* סופר כמה מוצרים בסל */
+#BasketCount {
+    background-color: #150a33;
+    border-radius: 50%;
+    width: 25px;
+    /* height: 2.5vw; */
+    z-index: 8;
+    text-align: center;
+    position: absolute;
+    top: 3;
+    color: white;
+    left: 113px;
+    top: 69px;
+}
+
+#basket {
+    width: 70px;
+    height: 70px;
+}
+
+.element.style {
+    margin-top: 4px;
+    top: 80px;
+    left: 140px;
+}
+
+#chezBasket {
+    width: 40px;
+    height: 40px;
+    margin-right: 150px;
+}
+
+#plus {
+    width: 4vw;
+    height: 5vh;
+}
+
+#minus {
+    width: 4vw;
+    height: 5vh;
+}
+
+#deleteProd {
+    width: 4vw;
+    height: 5vh;
+
+}
+#sumPrice{
+    width: 100%;
+    height: 30px;
+    background-color: #be1111;
+    text-align: center;
+    justify-content: center;
+    position: absolute;
+    top: 95%;
+    display: none;
+    
+}
+
+#divProdIcons {
+    display: flex;
+    flex-direction: column;
+}
+
+/* #BasketCount {
+ 
+    background-color: red;
+   
+    font-size: 12px;
+    padding: 2px 5px;
+    border-radius: 50%;
+  } */
+/* מיקום לוגו.סל.חיפוש */
+#nav_l.b.s {
+    /* width: 30%; */
+}
+
+.row {
+    --bs-gutter-x: 0rem;
+}
+
+.btn btn-outline-success {
+    width: 20px;
+    background-color: #00ceab 100%;
+}
+
+/* מיקום החיפוש */
+#search_nav_input {
+    font-weight: bolder;
+    margin-top: 8px;
+}
+
+/* מעבר על החיפוש */
+#search_nav_input:focus {
+    box-shadow: 3px 2px 2px 2px;
+}
+
+/* סרטון תמונות והשראה  */
+#p {
+    width: 100%;
+    height: 100%;
+    grid-area: "picture";
+    grid-row: 1/2;
+    justify-self: stretch;
+    margin-top: 2px;
+
+}
+#search_p{
+    margin-top: 176px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+
+#bluesircle{
+    z-index: 6;
+    width:200px;
+    height:200px;
+    margin-bottom: 180%;
+    margin-left: 100%;
+}
+#pinksircle{
+    /* margin-right: 70%;
+    /* margin-bottom: 90%; */
+    /* width:280px ;
+    height:280px ;
+    z-index: 6; */ 
+    z-index: 6;
+    width:200px;
+    height:200px;
+    margin-bottom: 180%;
+    margin-right: 100%;
+}
+#pinksircle2{
+    width:80px ;
+    height:80px ;
+    margin-right: 7%;
+}
+#sircle1{
+    margin-right: 20%;
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    background-color: #efeaef;
+  
+}
+/* page bmi */
+.inputBMI{
+width: 250px;
+border-radius: 25PX;
+margin-top: 4px;
+}
+/* פס עקום מתחת הכיתוב */
+#pas {
+    width: 250px;
+    height: 6px;
+    background-color: #f6f5f7;
+    transform: rotate(173.0705651450926deg);
+    position: relative;
+    left: -105px;
+    top: 18px;
+}
+
+.lines {
+    width: 100%;
+    display: flex;
+    grid-row: 4/5;
+}
+
+#describe {
+    grid-row: 5/6;
+    grid-area: "describe";
+    background-color: #efeaef;
+    /* display: grid;
+  grid-template-columns:0.05fr 1fr 0.05fr;
+  grid-template-rows: repeat(3,0.5fr); */
+
+}
+
+.pic {
+    /* grid-column: 1/2; */
+    width: 100%;
+    /* border: 3px double  rgb(55, 49, 89); */
+    box-shadow: 1px 1px 40px 2px rgb(192, 192, 192);
+
+}
+
+/* עיצוב הטקסט במידע */
+#text1,
+#text2,
+#text3 {
+    /* grid-column: 2/3; */
+    font-family: Rubik;
+    font-weight: bolder;
+    text-align: center;
+    color: #82009f;
+}
+
+#text1 {
+    color: #00ceab;
+}
+
+#text2 {
+    /* grid-column: 1/2; */
+    color: #f49052;
+}
+#gal{
+    grid-row: 4/5;
+  
+}
+/* 1משפטי השראה */
+#sentence {
+    padding-right: 12%;
+    color: #f84cae;
+    font-size: 35px;
+    margin-top: 3%;
+    grid-area: "sentence1";
+    grid-row: 3/4;
+    font-family: Bradley Hand ITC;
+    height: 30px;
+    margin-bottom: 2em;
+}
+
+/* אייקון במשפט השראה */
+#icon {
+    grid-area: "prefer";
+    grid-row: 4/5;
+    width: 100px;
+    height: 50px;
+    margin-right: 38%;
+    justify-content: start;
+}
+
+/* משפט השראה 2 */
+#sentence2 {
+    padding-right: 14%;
+    grid-row: 6/7;
+    grid-area: "sentence2";
+    color: #f84cae;
+    font-size: 70px;
+    font-family: Bradley Hand ITC;
+    background-color:#efeaef;
+    margin-bottom: 0em;
+    /* margin-top: 2%; */
+}
+
+/* תיאור-איך זה עובד */
+
+
+.DivsHoWork {
+    grid-row: 2/3;
+    grid-area:  "how_its_work";
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    padding-bottom: 60px;
+}
+
+.Div_how_work {
+    font-family: Rubik;
+    width: 380px;
+    height: 380px;
+    margin-right: 18px;
+    /* background-color: #f7345e; */
+    box-shadow: 1px 1px 40px 2px rgb(192, 192, 192);
+    border-radius: 2%;
+}
+
+.gif {
+    margin-right: 35%;
+    margin-top: 10%;
+    width: 110px;
+    height: 110px;
+
+}
+
+h4 {
+    color: #150a33;
+    text-align: center;
+}
+
+.h4_p {
+    font-weight: lighter;
+    color: rgb(172, 171, 171);
+    text-align: center;
+    line-height: 30px;
+    padding: 10px;
+}
+.h6_p{
+    text-align: center;
+    color:#4f1091;  
+}
+
+#pic2 {
+    margin-right: 3%;
+}
+
+#line2 {
+    display: flex;
+}
+
+#bigFooter {
+    height: 60vh;
+    background-color: #150a33;
+    text-align: center;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+#new{
+       
+        margin-right: 7px;
+        font-weight: 600;
+        color: #22c8e5;
+}
+#special{
+    margin-right: 7px;
+    font-weight: 500;
+    color: #8d60e7;
+}
+#footer {
+    background-color: #5e35b1;
+    height: 10vh;
+    text-align: center;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-start;
+    /* box-shadow: 5px 5px 40px 75px  #363142; */
+    box-shadow: 5px 5px 40px 238px rgba(28, 9, 80, .75);
+}
+
+#footer_continer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    /* padding: 60px 0 25px; */
+}
+
+.footer_column {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.footer_ul {
+    margin: 0;
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    color: #a08fc3;
+    font-family: Rubik;
+    line-height: 39px;
+}
+
+.footer_title {
+    font-weight: bolder;
+    margin-bottom: 20px;
+    color: #f1f1f1;
+    font-family: Rubik;
+}
+
+/* יצירת הקורסים */
+#productContent {
+
+    display: grid;
+    display: flex;
+    grid-template-columns: repeat(3, 00.05fr);
+    grid-template-rows: repeat(2, 0.05fr);
+    justify-content: center;
+    align-content: center;
+    column-gap: 18px;
+    row-gap: 18px;
+    margin-top: 13%;
+    margin-bottom: 5%;
+    flex-wrap: wrap;
+}
+
+#Products-Page {
+    display: none;
+}
+
+
+    .course {
+        display: flex;
+        border-radius: 2%;
+        text-align: center;
+        align-items: center;
+        height: 400px;
+        width: 400px;
+        box-shadow: 1px 1px 40px 2px rgb(192, 192, 192);
+        flex-wrap: wrap;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-content: center;
+    }
+
+
+.CartBtn {
+    font-size: 15px;
+    line-height: 18px;
+    font-weight: 500;
+    letter-spacing: 0;
+    text-transform: capitalize;
+    border: 0;
+    border-radius: 25px;
+    background-color: #f7345e;
+    color: #fff !important;
+    padding: 10px 40px;
+    text-decoration: none;
+
+}
+
+.CartBtn:hover {
+    background-color: #269bd1;
+}
+
+.imgCourse {
+    width: 13vw;
+    height: 13vw;
+}
+
+/* The side navigation menu */
+.divCart {
+    height: 100%;
+    /* 100% Full-height */
+    width: 0;
+    /* 0 width - change this with JavaScript */
+    position: fixed;
+    /* Stay in place */
+    z-index: 12;
+    /* Stay on top */
+    top: 0;
+    /* Stay at the top */
+    left: 0;
+    background-color: #150a33;
+    /* Black*/
+    overflow-x: hidden;
+    /* Disable horizontal scroll */
+    padding-top: 60px;
+    /* Place content 60px from the top */
+    transition: 0.5s;
+    /* 0.5 second transition effect to slide in the sidenav */
+
+}
+
+/* מוצרים מודגשים-שנמצאים בסל */
+#mark_product {
+    border: 4px solid;
+   
+    border-image: linear-gradient(to right, #82009f 0, #5d34af 50%, #00ceab 100%) 50 !important;
+    /* border-image: linear-gradient(to right, #82009f 0, #5d34af 50%, #00ceab 100%) 25;border-width: 4px;border-style: solid; */
+
+}
+
+/* The navigation menu links */
+.divCart a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+
+/* When you mouse over the navigation links, change their color */
+.divCart a:hover {
+    color: #f1f1f1;
+}
+
+/* Position and style the close button (top right corner) */
+.closebtn {
+    /* position: absolute; */
+    /* top: 0; */
+    /* right: 25px; */
+    font-size: 36px;
+    /* margin-left: 50px; */
+}
+
+/* //סל קניות */
+#cart_product {
+    color: #f1f1f1;
+
+}
+
+/* ציור המוצר לתוך סל הקניות */
+#divProd {
+    /* width: 250px; */
+    width: 100%;
+    height: 100px;
+    color: #150a33;
+    background-color: #f1f1f1;
+    margin-bottom: 3px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+
+/* איקון למוצרים בסל */
+.prodImg {
+    width: 10px;
+    height: 10px;
+
+}
+#BMI-Page{
+    display: none;
+ 
+}
+#BMI-content{
+    display: grid;
+    height: 700px;
+    grid-template-rows: 1fr 1fr ;
+    background-image: url(./pictures/4.png);
+}
+.inputBMI{
+   grid-row: 2/3;
+
+}
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+    .divCart {
+        padding-top: 15px;
+    }
+
+    .divCart a {
+        font-size: 18px;
+    }
+}
+
+#circle{
+    background-color: #e2e2e2;
+    border-radius: 50%;
+    /* width: 200px; */
+    width: 1000px;
+    height: 1000px;
+    margin-right: 320px;
+    margin-bottom: 800px;
+  }
+  
+
+svg:not(:root) {
+    overflow: hidden;
+}
+.rs-stroke {
+    display: block;
+    width: calc(100% - 0px);
+    height: 20px;
+    stroke: rgb(247,52,94);
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    stroke-width: 4;
+    stroke-dasharray: 1000px;
+    stroke-dashoffset: 1000px;
+    animation: 2s ease-out forwards rs-drawstroke;
+    animation-delay: .5s;
+}

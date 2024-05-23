@@ -1,0 +1,159 @@
+
+#searchInput {
+    color: white;
+    width:230px;
+    /* box-sizing: border-box; */
+    border: 1px solid #ccc;
+    border-radius: 25px;
+    font-size: 16px;
+    background-color: #ccc;
+    background-image: url(./pictures/search.png);
+    background-size: 30px;
+   background-position: 10px 10px; 
+    background-repeat: no-repeat;
+    padding: 12px 20px 12px 40px;
+    -webkit-transition: width 0.4s ease-in-out;
+    transition: width 0.4s ease-in-out;
+    margin-top: 20px;
+    z-index: 10;
+  }
+  
+
+#divProd {
+    /* width: 250px; */
+    width: 100%;
+    height: 100px;
+    color: #150a33;
+    background-color: #f1f1f1;
+    margin-bottom: 3px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: space-around;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+  #searchInput:focus {
+    width: 340px;
+    border: none;
+  }
+  .tp-highred {
+    color: #f7345e;
+    background: linear-gradient(-107deg,#82009f 0,#f7345e 100%);
+    transform: skewX(-10deg);
+    position: relative;
+    display: inline-block;
+    font-size: 1.2em;
+    line-height: 1em;
+    font-weight: 700;
+    text-align: center;
+    /* font-family: Rubik; */
+    text-transform: capitalize;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.tg-page-header__title{
+    text-align: center;
+    font-family: Rubik;
+}
+.tg-small{
+    font-weight: 300;
+    color: rgba(28,9,80,.75);
+    text-align: center;
+    font-size: 0.5em ;
+    line-height: 1.2;
+    
+}
+/* 
+.autocomplete-items {
+    position: absolute;
+    border: 1px solid #d4d4d4;
+    border-bottom: none;
+    border-top: none;
+    z-index: 99;
+    /*position the autocomplete items to be the same width as the container:*/
+    /* top: 100%;
+    left: 0;
+    right: 0;
+  } */
+  .mark_product{
+    border:4px solid;
+    border-image: linear-gradient(to right, #82009f 0, #5d34af 50%, #00ceab 100%)50;
+    
+  }
+  .autocomplete-items div {
+    padding: 10px;
+    cursor: pointer;
+    background-color: #fff; 
+    border-bottom: 1px solid #d4d4d4; 
+  }
+  
+  /*when hovering an item:*/
+  .autocomplete-items div:hover {
+    background-color: #e9e9e9; 
+  } */
+/*when navigating through the items using the arrow keys:*/
+.autocomplete-active {
+    background-color: DodgerBlue !important; 
+    color: #ffffff; 
+  }
+/* עיצוב פס מתחת */
+.rs-stroke {
+  display: block;
+  width: calc(100% - 0px);
+  height: 20px;
+  stroke: rgb(247,52,94);
+  position: absolute;
+  left: 0;
+  bottom: -10px;
+  stroke-width: 4;
+  stroke-dasharray: 1000px;
+  stroke-dashoffset: 1000px;
+  animation: 2s ease-out forwards rs-drawstroke;
+  animation-delay: .5s;
+}
+/* טווח מחירים */
+#priceRangeValue {
+  color: rgb(7, 93, 168);
+}
+
+#prices {
+  /* display: flex; */
+  /* flex-direction: column; */
+  /* justify-content: space-evenly; Vertically center the content */
+  align-items: center;
+  /* margin-top: 300px; */
+ 
+}
+
+.form-range {
+  width: 200px;
+}
+#coupon {
+  /* opacity: 0%; */
+  display:block ;
+  transform: scale(0);
+  border: 5px dotted #bbb; /* Dotted border */
+  width: 20%;
+  border-radius: 15px; /* Rounded border */
+  margin: 0 auto; /* Center the coupon */
+  max-width: 600px;
+  position: fixed;
+  top:20%;
+  left:2%;
+  z-index: 13;
+}
+.container {
+  padding: 2px 16px;
+  background-color: #f1f1f1;
+}
+
+.promo {
+  background: #ccc;
+  padding: 3px;
+}
+
+.expire {
+  color: red;
+}
+

@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- קישורים לבוטסרפ -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://getbootstrap.com/docs/5.2/assets/css/docs.css" rel="stylesheet">
+
+
+    <title>Fitness</title>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+<link rel="stylesheet" href="./Fitness.css">
+<link rel="stylesheet" href="./fitnes2.css">
+<link rel="icon" href="./pictures/עיצוב ללא שם (2).png">
+
+<body>
+    <!-- צור קשר-עליון 1.-->
+    <div id="top">
+    <div id="colors"><span id="fontColors">Get the best update we ever made! 🚀
+            Sign up to be updated NOW!</span></div>
+    <!--2. ניווט עליון -->
+    <div id="top-nav" class="row">
+        <!-- <div class="col-md-6"> -->
+        <ul class="nav">
+            <div id="links_pages">
+                <li class="nav-item">
+                    <a class="nav-link" href="./home.html" onclick="HomePage()">דף הבית</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link " href="#" onclick="BMIPage()">מחשבון BMI</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link " href="#" onclick="Page()">קצת עלינו</a>
+                </li>
+                <li id="courses" class="nav-item">
+                    <a class="nav-link" href="#" onclick="ProductsPage()">קורסים</a>
+                </li>
+                <li id="friend-cloub" class="nav-item">
+                    <a class="nav-link">מועדון חברים</a>
+                </li>
+            <li class="nav-item">
+            </li>
+            <!-- </div> -->
+            <!-- Use any element to open the sidenav -->
+            <!-- <li class="nav-item"> <img id="img_logo" src="./pictures/לוגו חדש.png" alt=""></li> -->
+            <li class="nav-item"><img id="basket" src="./pictures/icons/basketBlue.gif" alt="" onclick="openNav()">
+                <div id="BasketCount">0</div>
+            </li>
+        </ul>
+        <!-- </div> -->
+    </div>
+</div>
+    <div id="Home-Page">
+        <div id="coupon">
+            <div class="container">
+              <h3>Fitness</h3>
+            </div>
+            <img src="./pictures/2.png" alt="Avatar" style="width:100%;">
+            <div class="container" style="background-color:white">
+              <h2><b>20% על הקורסים לילדים</b></h2>
+              <p>מבצע קיץ לוהט שיעשה לכם את השנה ! עם המון כיף וחוויה</p>
+            </div>
+            <div class="container">
+              <p>קוד קופון<span class="promo">BOH232</span></p>
+              <p class="expire">עד לתאריך: יוני 03, 2021</p>
+            </div>
+          </div>
+        <!-- <div id="sircle1"></div> -->
+        <!--4. סרטון/תמונות השראה -->
+        <div id="p">
+            <!-- <img id="pinksircle2" src="./pictures/כדור אדום.jpg" alt=""> -->
+            <div id="search_p">
+            <h1 class="tg-page-header__title">
+                <span class="tp-highred"> !Yaa! Fitness</span>
+                <br>
+                הוסף ליום שלך פעילות גופנית
+                <br>
+
+                <span class="tg-small"> חקור את היצע פעילויות הספורט שלנו ובחר את הקורס המדויק לך
+                    <br>כדי לשפר את איכות החיים ולרכוש קרירת ספורט מבטיחה מחכים לך----
+                </span>
+            </h1>
+            <form>
+                <input id="searchInput" type="text" name="search" placeholder="חיפוש..">
+
+            </form>
+             <!-- <img id="bluesircle" src="./pictures/כדור כחול.jpg" alt="">
+            <img id="pinksircle" src="./pictures/כדור אדום.jpg" alt="">  -->
+        </div>
+     
+        </div>
+        <div id="how_its_work">   
+             
+            <!-- <div id="circle"></div> -->
+            <!-- <p>So, how does it work?</p> -->
+            <div class="DivsHoWork">
+                <div class="Div_how_work" id="Div_how_work1">
+                    <img class="gif" src="./pictures/icons/מתנה.gif" alt="">
+                    <h4>בוחרים תחום שמתאים לכם</h4>
+                    <p class="h4_p">יש לנו מגוון אפשרויות כדי לספק את ההעדפות ולמטרות הכושר שלכם.
+                        עם מידע מפורט על כל קורס, תוכלו לקבל החלטה מושכלת ולצאת למסע כושר המתאים לצרכיכם.</p>
+                    <h6 class="h6_p">בטוח תמצאו----</h6>
+                </div>
+                <div class="Div_how_work" id="Div_how_work2">
+                    <img class="gif" src="./pictures/icons/חיצים (1).gif" alt="">
+                    <h4>נרשמים לסדרת שיעורים</h4>
+                    <p class="h4_p">מוכן להתחייב למסע הכושר שלך? הירשם לסדרת שיעורים באתר הכושר והספורט שלנו.
+                        נצלו את אפשרויות התזמון הגמישות שלנו והבטיחו את מקומכם בשיעורים המתאימים בצורה מושלמת לשגרה
+                        שלכם.
+                    </p>
+                    <h6 class="h6_p">קלללל.....</h6>
+                </div>
+                <div class="Div_how_work" id="Div_how_work3">
+                    <img class="gif" src="./pictures/icons/כושר.gif" alt="">
+                    <h4>ונהנים משגרת חיים בריאה</h4>
+                    <p class="h4_p">הפכו את הכושר לחלק משגרת היומיום שלכם ותחוו את היתרונות של אורח חיים ספורטיבי
+                        במונחים של בריאות גופנית, רווחה נפשית וzאושר כללי.</p>
+                    <h6 class="h6_p">אעע קשה להתאפק!</h6>
+                </div>
+            </div>
+         </div> 
+
+        <!-- <-- משפט השראה ואייקון --> 
+        <p id="sentence">If you are about to give up, 
+            <i>look</i>
+            <svg class="rs-stroke" viewBox="0 0 154 13" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1"><path d="M2 2c49.7 2.6 100 3.1 150 1.7-46.5 2-93 4.4-139.2 7.3 45.2-1.5 90.6-1.8 135.8-.6" fill="none" stroke-linecap="round" stroke-linejoin="round" vector-effect="non-scaling-stroke"></path></svg>
+            back for a moment and see how far you have come
+            <img id="icon" src="./pictures/icon.png" alt="">
+
+        </p>
+        <div id="gal">
+             <svg style="background-color:#efeaef;" width="100%" height="95" grid-row="2/3" viewBox="0 0 100 100"
+                preserveAspectRatio="none">
+                <path id="wavepath" d="M0,0  L110,0C35,150 35,0 0,100z" fill="white"></path>
+            </svg>
+        </div>
+
+        <!-- מידע -->
+        <div id="describe">
+            <!-- שורה 1 -->
+            <div class="row" class="lines" id="line1">
+                <div class="col-md-6" class="text" id="text1">
+                    </br>
+                    </br>
+                    </br>
+                    </br>
+                    <br>
+                    <h1>הבחירה המנצחת</h1>
+                    </br> זה לא סתם במקרה שהאחוזים הגבוהים באוכלוסיה בוחרים להרשם
+                    </br> וללמוד בפיטנס, זה בגלל שהסטודיו נותן להם חופש וגב לנצל
+                    </br> את המקסימום, שיעור אחר שיעור, כל פעם מחדש- כבר מעל 10
+                    </br>.שנים
+                    <div id="pas"></div>
+                </div>
+                <div class="col-md-5" id="pic1">
+                    <img class="pic" id="line_1_pic" src="./pictures/10.png" alt="">
+                </div>
+            </div>
+            <!-- שורה 2 -->
+            <div class="row" class="lines" id="line2">
+                <div class="col-md-5" id="pic2">
+                    <img class="pic" id="line_2_pic" src="./pictures/5.png" alt="">
+                </div>
+                <div class="col-md-6" class="text" id="text2">
+                    </br>
+                    </br>
+                    </br>
+                    </br>
+                    <br>
+                    <h1>חשוב שתרגישו בנח!</h1>
+                    </br>אין התחייבות לשנה, אין דמי מנוי, אין קנסות לביטולים.
+                    </br> מה כן? - מחירון גמיש, מדיניות החזרים פשוטה,
+                    </br> לא נרשמת = לא שילמת.
+
+                    <div id="pas" class="pas2"></div>
+                </div>
+            </div>
+            <!-- שורה 3 -->
+            <div class="row" class="lines" id="line3">
+                <div class="col-md-6" class="text" id="text3">
+                    </br>
+                    </br>
+                    </br>
+                    </br>
+                    <br>
+                    <h1>באיזו רמה אתם רוצים להיות?</h1>
+                    </br>כל השיעורים מחולקים לפי רמות, ממתחילים בסיס ועד מתקדמים.
+                    </br>אם גם אתם מאמינים בבני אדם ולא בשנת לידה - אז אנחנו על
+                    </br>אותו גל, שימו בצד את הגיל שלכם ובואו להתעמל.
+                    <div id="pas"></div>
+                </div>
+                <div class="col-md-5" id="pic3">
+                    <img class="pic" id="line_3_pic" src="./pictures/משקולות בחוץ.png" alt="">
+                </div>
+            </div>
+        </div>
+
+        <!-- משפט השראה שני  -->
+        <p id="sentence2">!your fitness goals are that close!  </p> 
+          
+      
+
+    </div>
+    <div id="Products-Page">
+        <div id="productContent"></div>
+    </div>
+    <div id="BMI-Page">
+        <img src="./pictures/4.png" id="BMI-content">
+        <div id="BMI-content">
+        <div class="inputBMI">
+          
+            <!-- <span>גיל</span>
+            <input class="inputBMI" id="age" type="text">
+            <span>גובה</span> -->
+            <div id="prices">
+                <input type="range" class="form-range" id="customRange1" min="0" max="120" step="1" value="0"
+                  onchange="updatePriceRange(this.value)">
+                <p id="priceRangeValue">משקל: 0kg</p>
+              </div>
+            
+            <!-- <input  class="inputBMI" id="height" type="text">
+            <span>משקל</span>
+            <input class="inputBMI" id="Weight" type="number"> -->
+            <button onclick="calcBMI()">לחישוב הBMI שלי</button>
+            <span id="answer"></span>
+        </div>
+    </div>
+    </div>
+    <div id="myCart" class="divCart">
+        <div id="chez_x">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <img id="chezBasket" onclick="bigCart()" src="./pictures/icons/chez.gif" alt="">
+        </div>
+       
+     
+             
+        <a href="./pay_page.html" id="sumPrice">לתשלום</a>
+    </div>
+
+
+
+
+
+    <footer>
+        <div id="bigFooter">
+            <div id="footer_continer">
+                <div class="footer_column">
+
+                    <ul class="footer_ul">
+                        <li class="footer_title">הסניפים שלנו</li>
+                        <li>מכון מור - ז'בוטינסקי165 - בני ברק</li>
+                        <li>נתיבות שלום 11 - נאות הפסגה - מודיעין עילית</li>
+                        <li> דם המכבים 123 - מודיעין</li>
+                        <li>גאולה 22 - גני הדר - חיפה</li>
+                        <li>בלינסון 3 - מאחורי שופרסל - כפר אברהם - פתח תקווה</li>
+                        <li>מנחת יצחק 10 (הכניסה מסביב) - ירושלים</li>
+                        <li></li>
+                    </ul>
+                </div>
+                <div>
+
+                    <ul class="footer_ul">
+                        <li class="footer_title"> הקורסים שאנחנו מציעים</li>
+                        <li>התעמלות קרקע<span id="new">!new</span></li>
+                        <li>ספורט טיפולי<span id="special">!special</span></li>
+                        <li> התעמלות לעיצוב וחיטוב הגוף </li>
+                        <li> מסלולי ספורט יומיומיים לשגרה בריאה<span id="special">!special</span></li>
+                        <li>התעמלות מים<span id="special">!special</span></li>
+                        <li>ליווי והדרכה לתזונה בריאה</li>
+                    </ul>
+                </div>
+                <div>
+
+                    <ul class="footer_ul">
+                        <li class="footer_title"> יצירת קשר</li>
+                        <li>0583273805</li>
+                        <li>0548594933</li>
+                        <li> yehuditk33@gmail.com</li>
+                        <li>r0583273805@gmail.com</li>
+                    </ul>
+                </div>
+                <div>
+
+                    <ul class="footer_ul">
+                        <li class="footer_title">שעות הפעילות שלנו</li>
+                        <li>בוקר:07:00-12:00</li>
+                        <li>אחה"צ:16:00-22:00</li>
+                        <li> יום שישי המכונים נסגרים ב11:00</li>
+                        <li>השארו מעודכנים בשינויי הזמנים</li>
+                        <li> --רשת שומרת שבת--</li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+        <div id="footer">
+
+            © Copyright 2023 by Fitness.yr
+        </div>
+        
+    </footer>
+</body>
+<script src="./products.js"></script>
+<script src="./cart.js"></script>
+<script src="./Fitness.js"></script>
+<script src="./Fitness2.js"></script>
+
+
+
+
+
+</html>
